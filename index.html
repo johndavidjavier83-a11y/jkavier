@@ -1,0 +1,226 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JD Academic Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Animated background -->
+    <div class="background">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="logo">
+            <span>JD</span> Portfolio
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#works">Academic Works</a>
+        </nav>
+    </header>
+
+    <!-- HOME -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <div class="profile-container">
+                <!-- CHANGE THIS IMAGE -->
+                <img src="images/profile.jpg"
+                     alt="Profile Picture"
+                     class="profile-picture">
+            </div>
+
+            <div class="hero-text">
+                <p class="small-title">MY ACADEMIC PORTFOLIO</p>
+
+                <h1>
+                    Hello, I'm
+                    <span>John David Javier</span>
+                </h1>
+
+                <p class="description">
+                    Welcome to my academic portfolio. This website contains
+                    my quizzes, examinations, activities, projects, and other
+                    academic works.
+                </p>
+
+                <a href="#works" class="main-button">
+                    Explore My Works
+                    <span>→</span>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="scroll-indicator">
+            <span></span>
+            Scroll Down
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+
+        <div class="section-title">
+            <p>GET TO KNOW ME</p>
+            <h2>About <span>Me</span></h2>
+        </div>
+
+        <div class="about-container">
+
+            <div class="about-image">
+                <img src="images/profile.jpg" alt="John David Javier">
+            </div>
+
+            <div class="about-content">
+
+                <h3>John David Javier</h3>
+
+                <p>
+                    I am a Computer Science student who is continuously
+                    developing my knowledge and skills in programming,
+                    technology, and computer-related subjects.
+                </p>
+
+                <p>
+                    This portfolio serves as a collection of my academic
+                    activities, assessments, projects, and other school works.
+                    It also represents my progress and learning throughout
+                    my studies.
+                </p>
+
+                <div class="info-grid">
+
+                    <div class="info-box">
+                        <span>COURSE</span>
+                        <strong>BS Computer Science</strong>
+                    </div>
+
+                    <div class="info-box">
+                        <span>PORTFOLIO</span>
+                        <strong>Academic Works</strong>
+                    </div>
+
+                    <div class="info-box">
+                        <span>FOCUS</span>
+                        <strong>Programming & Technology</strong>
+                    </div>
+
+                    <div class="info-box">
+                        <span>WEBSITE</span>
+                        <strong>Academic Portfolio</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ACADEMIC WORKS -->
+    <section id="works" class="section works-section">
+
+        <div class="section-title">
+            <p>MY COLLECTION</p>
+            <h2>Academic <span>Works</span></h2>
+        </div>
+
+        <div class="category-buttons">
+
+            <button class="category-btn active"
+                    onclick="showCategory('quiz', this)">
+                Quiz
+            </button>
+
+            <button class="category-btn"
+                    onclick="showCategory('longQuiz', this)">
+                Long Quiz
+            </button>
+
+            <button class="category-btn"
+                    onclick="showCategory('midterms', this)">
+                Midterms
+            </button>
+
+            <button class="category-btn"
+                    onclick="showCategory('finals', this)">
+                Finals
+            </button>
+
+            <button class="category-btn"
+                    onclick="showCategory('activities', this)">
+                Activities
+            </button>
+
+            <button class="category-btn"
+                    onclick="showCategory('projects', this)">
+                Projects
+            </button>
+
+        </div>
+
+
+        <div class="works-container">
+
+            <div class="category-heading">
+                <div>
+                    <p>ACADEMIC CATEGORY</p>
+                    <h3 id="categoryTitle">Quiz</h3>
+                </div>
+
+                <span id="workCount">0 Works</span>
+            </div>
+
+            <div id="worksGrid" class="works-grid">
+                <!-- JavaScript inserts works here -->
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-logo">
+            JD Portfolio
+        </div>
+
+        <p>
+            Academic Portfolio • John David Javier
+        </p>
+
+        <p class="copyright">
+            © 2026 John David Javier. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+```
